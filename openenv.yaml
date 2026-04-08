@@ -1,0 +1,62 @@
+spec_version: 1
+name: startup_pivot_agent
+title: Startup Pivot Agent (RL Environment)
+type: space
+runtime: fastapi
+app: server.app:app
+port: 8000
+metadata:
+	domain: reinforcement-learning
+	track: startup-strategy
+	deterministic: true
+	estimated_max_inference_minutes: 20
+action_space:
+	model: StartupPivotAction
+	type: discrete-structured
+	actions:
+		- refine_market
+		- reduce_scope
+		- add_feature
+		- remove_feature
+		- adjust_pricing
+		- pivot_problem
+observation_space:
+	model: StartupPivotObservation
+	fields:
+		current_startup_idea: text
+		metrics:
+			market_demand: float(0-10)
+			feasibility: float(0-10)
+			scalability: float(0-10)
+			clarity: float(0-10)
+			novelty: float(0-10)
+		feedback_summary: text
+reward:
+	mode: dense
+	step_range:
+		min: -1.0
+		max: 1.0
+	final_score_range:
+		min: 0.0
+		max: 1.0
+	shaping:
+		positive:
+			- metric improvement
+			- clarity gain bonus
+			- feasibility gain bonus
+		penalties:
+			- overcomplication via feature bloat
+			- no-improvement step
+tasks:
+	source: tasks/startup_tasks.json
+	total: 3
+	deterministic_grading: true
+runtime_config:
+	max_episode_steps:
+		easy: 6
+		medium: 8
+		hard: 10
+	target_resources:
+		cpu_cores: 2
+		memory_gb: 8
+

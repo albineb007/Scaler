@@ -1,0 +1,98 @@
+{
+  "tasks": [
+    {
+      "task_id": "task_easy",
+      "difficulty": "easy",
+      "input_idea": "A SaaS tool that helps neighborhood cafes sell unsold pastries before closing time.",
+      "problem_statement": "Independent cafes lose daily revenue from unsold fresh inventory.",
+      "target_audience": "independent cafes in dense urban neighborhoods",
+      "pricing_model": "4% transaction fee with optional monthly analytics",
+      "features": [
+        "daily surplus listing",
+        "scheduled discount windows",
+        "pickup slot selection",
+        "basic sales report"
+      ],
+      "initial_metrics": {
+        "market_demand": 6.2,
+        "feasibility": 6.5,
+        "scalability": 5.4,
+        "clarity": 6.1,
+        "novelty": 4.8
+      },
+      "expected_improvement": "Improve scalability and clarity slightly while keeping implementation realistic.",
+      "max_steps": 6,
+      "grading_profile": {
+        "average_weight": 0.45,
+        "clarity_weight": 0.25,
+        "feasibility_weight": 0.2,
+        "viability_weight": 0.1,
+        "complexity_penalty_weight": 0.15
+      }
+    },
+    {
+      "task_id": "task_medium",
+      "difficulty": "medium",
+      "input_idea": "An AI productivity platform for everyone that has many tools and automations.",
+      "problem_statement": "People waste time on repetitive work but the idea is still too vague.",
+      "target_audience": "everyone with work or study tasks",
+      "pricing_model": "freemium",
+      "features": [
+        "task planner",
+        "email writer",
+        "meeting summarizer",
+        "automated dashboards",
+        "habit tracker",
+        "team chat assistant"
+      ],
+      "initial_metrics": {
+        "market_demand": 5.0,
+        "feasibility": 4.6,
+        "scalability": 4.8,
+        "clarity": 3.9,
+        "novelty": 5.7
+      },
+      "expected_improvement": "Narrow audience, remove non-core features, and establish a viable pricing strategy.",
+      "max_steps": 8,
+      "grading_profile": {
+        "average_weight": 0.42,
+        "clarity_weight": 0.28,
+        "feasibility_weight": 0.22,
+        "viability_weight": 0.08,
+        "complexity_penalty_weight": 0.18
+      }
+    },
+    {
+      "task_id": "task_hard",
+      "difficulty": "hard",
+      "input_idea": "A brain-chip AGI app that instantly solves every business problem for every company worldwide.",
+      "problem_statement": "All companies need guaranteed growth overnight through futuristic intelligence.",
+      "target_audience": "all businesses in all industries",
+      "pricing_model": "free forever for everyone",
+      "features": [
+        "real-time brain interface",
+        "autonomous strategy generation",
+        "global market prediction",
+        "instant legal compliance",
+        "one-click company transformation",
+        "full autonomous operations"
+      ],
+      "initial_metrics": {
+        "market_demand": 3.2,
+        "feasibility": 1.8,
+        "scalability": 3.0,
+        "clarity": 2.5,
+        "novelty": 8.4
+      },
+      "expected_improvement": "Transform an unrealistic concept into a focused, feasible startup with credible pricing and scope.",
+      "max_steps": 10,
+      "grading_profile": {
+        "average_weight": 0.4,
+        "clarity_weight": 0.25,
+        "feasibility_weight": 0.25,
+        "viability_weight": 0.1,
+        "complexity_penalty_weight": 0.2
+      }
+    }
+  ]
+}
